@@ -64,6 +64,27 @@ CREATE TABLE lekcja (
 INSERT INTO korepetytor (login, haslo,imie,nazwisko, czyAdministrator ) VALUES ("admin","123","Jan","Kowalski",1);
 
 
--- triger uzupelniajacy temat lekcji
--- triger kasujacy kaskadowo ucznia
--- funkcja zliczania ilosci uczniow w klasie
+CREATE TRIGGER `dodawanieKonta` 
+AFTER INSERT ON `uczen` 
+FOR EACH ROW 
+INSERT INTO konto(idUcznia) VALUES (new.id);
+
+CREATE TRIGGER `usuwanieKaskadoweUcznialekcja` 
+BEFORE DELETE ON `uczen` 
+FOR EACH ROW 
+DELETE FROM lekcja WHERE lekcja.idUcznia = OLD.id
+
+CREATE TRIGGER `usuwanieKaskadoweUczniakonto` 
+BEFORE DELETE ON `uczen` 
+FOR EACH ROW 
+DELETE FROM konto WHERE konto.idUcznia = OLD.id;
+
+DELIMITER //
+CREATE FUNCTION CalcIlosc2 ( id INT )
+RETURNS INT
+BEGIN
+   DECLARE il INT;
+   SET il = 0;
+   SET il = (SELECT COUNT(uczen.id) FROM uczen WHERE uczen.idKlasy = id);
+   RETURN il;
+END; //

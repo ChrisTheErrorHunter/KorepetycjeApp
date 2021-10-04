@@ -99,7 +99,7 @@ namespace Korepetycje
             baza.Polaczenie.Open();
             command.ExecuteNonQuery();
             baza.Polaczenie.Close();
-
+            /*
             SQL = "SELECT MAX(id) FROM konto; ";
             int newid;
             command = new MySqlCommand(SQL, baza.Polaczenie);
@@ -119,6 +119,7 @@ namespace Korepetycje
             baza.Polaczenie.Open();
             command.ExecuteNonQuery();
             baza.Polaczenie.Close();
+            */
         }
 
         private void Edytuj()

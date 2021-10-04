@@ -26,8 +26,7 @@ namespace Korepetycje
         {
             BazaDanych baza = new BazaDanych();
 
-            string SQL = "SELECT id, nazwa, szkola, stopien FROM klasa";
-            
+            string SQL = "SELECT id, nazwa, szkola, stopien, CalcIlosc2(id) FROM klasa";
             MySqlCommand command = new MySqlCommand(SQL, baza.Polaczenie);
 
             baza.Polaczenie.Open();
@@ -40,6 +39,7 @@ namespace Korepetycje
                 WierszViewItem item = new WierszViewItem(id, text);
                 item.SubItems.Add(BazaDanych.CzytajString(dataReader, 2));
                 item.SubItems.Add(BazaDanych.CzytajString(dataReader, 3));
+                item.SubItems.Add(dataReader.GetInt32(4)+"");
                 this.listView1.Items.Add(item);
             }
 

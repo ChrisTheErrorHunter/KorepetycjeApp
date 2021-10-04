@@ -142,3 +142,9 @@ C:\Users\mrkri\Desktop\DBP\KorepetycjeApp\Korepetycje\Korepetycje\obj\Debug\Kore
 C:\Users\mrkri\Desktop\DBP\KorepetycjeApp\Korepetycje\Korepetycje\obj\Debug\Korepetycje.OknoKorekta.resources
 C:\Users\mrkri\Desktop\DBP\KorepetycjeApp\Korepetycje\Korepetycje\obj\Debug\Korepetycje.OknoZaawansowane.resources
 C:\Users\mrkri\Desktop\DBP\KorepetycjeApp\Korepetycje\Korepetycje\obj\Debug\Korepetycje.Potwierdzenie.resources
+D:\Korepetycje\Osoby\KrzysztyofToruń\Korepetycje\Korepetycje\obj\Debug\Korepetycje.ListaRachunkow.resources
+D:\Korepetycje\Osoby\KrzysztyofToruń\Korepetycje\Korepetycje\obj\Debug\Korepetycje.OknoKorekta.resources
+D:\Korepetycje\Osoby\KrzysztyofToruń\Korepetycje\Korepetycje\obj\Debug\Korepetycje.OknoObciaz.resources
+D:\Korepetycje\Osoby\KrzysztyofToruń\Korepetycje\Korepetycje\obj\Debug\Korepetycje.OknoZaawansowane.resources
+D:\Korepetycje\Osoby\KrzysztyofToruń\Korepetycje\Korepetycje\obj\Debug\Korepetycje.OknoZasil.resources
+D:\Korepetycje\Osoby\KrzysztyofToruń\Korepetycje\Korepetycje\obj\Debug\Korepetycje.Potwierdzenie.resources
